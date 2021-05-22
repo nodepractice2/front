@@ -1,0 +1,72 @@
+body{
+    display: table-cell;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+.sfon {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.login-form {
+    width: 280px;
+}
+
+
+
+.intro1{
+    font-family: "Noto Sans KR";
+}
+.info1{
+    margin-top: 10px;
+    width: 80%;
+    font-family: "Noto Sans KR";
+    font-size: 15px;
+}
+.info2{
+    margin-top: 10px;
+    width: 80%;
+    font-family: "Noto Sans KR";
+}
+.info3{
+    margin-top: 10px;
+    width: 80%;
+    font-family: "Noto Sans KR";
+}
+.info4{
+    margin-top: 10px;
+    width: 80%;
+    font-family: "Noto Sans KR";
+}
+.info5{
+    margin-top: 10px;
+    width: 80%;
+    font-family: "Noto Sans KR";
+}
+.info6{
+    margin-top: 10px;
+    width: 80%;
+    font-family: "Noto Sans KR";
+}
+.submit input{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    background: linear-gradient( rgb(24, 26, 24), rgb(73, 75, 74));
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 0px;
+    align-items: center;
+}
