@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">     <!--외부 폰트 사용하기 위한 링크-->
+    <link rel="stylesheet" href="./loginstyle.css"> <!--css 링크-->
+
+</head>
+<body>
+
+    <body>
+        <!--전체를 감싸는 div태크-->
+        <div class="wrap"> 
+            <!--아이디 패스워드 등 로그인에 관한 div태그-->
+            <div class="login"> 
+                <h2>영진전문대학<br/>2WDA</h2>
+
+                        <!--ID 최대입력글자 10-->
+                        <form action='login' method='post'>
+                <div class="login_id">
+                    <h4>E-mail</h4>
+                    <input type="email" name="email"  id="email"placeholder="Email" >
+                </div>
+
+                    <!--PASSWD-->   
+                <div class="login_pw">
+                    <h4>Password</h4>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div><br><br>
+                    <!--회원가입 div-->
+                <div class="login_etc">
+                    <div class="join">
+                        <a href="../join">회원가입</a>
+                    </div>
+                </div>
+                    <!--로그인 버튼 submit은 서버로 데이터 전송기능-->
+                <div class="submit">
+                    
+                   <input type="button" onclick = "login()" value="로그인">
+                    </form>
+                </div><br>
+                
+                <!--분실 div-->
+                <div class="login_frg"> 
+                    <div class="forgot_id">
+                        <a href="">아이디를 잊으셨습니까?</a>
+                        </div><br>
+                        <div class="forgot_pw">
+                            <a href="">비밀번호를 잊으셨습니까?</a>
+                            </div>
+                    </div>       
+
+            </div>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            function login(){
+            
+            const email = document.getElementById("email");
+            const password = document.getElementById('password')
+            axios({
+                method:"POST",
+                url: 'http://localhost:3000/login',
+                data:{
+                    "email": email.value,
+                    "password": password.value
+                }
+            }).then((res)=>{
+              console.log(res);
+                if(res.data == "passwderror"){
+                  alert("비밀번호 오류");
+                }
+                 else if(res.data == "emailerror"){
+                   alert("존재하지 않는 email입니다"); 
+                }else {
+                    location.replace("/");
+
+
+                }
+            }).catch(error=>{
+                console.log(error);
+                throw new Error(error);
+            });
+        }
+        </script>
+
+    </body>
+</html>

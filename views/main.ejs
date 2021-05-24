@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet"><!-- 폰트 링크-->
+    <link rel="stylesheet" href="./main.css"> 
+    
+    
+
+
+
+
+</head>
+
+
+
+<body>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready( function() {
+
+    $("#page").load("/exper.ejs");  
+
+    
+
+});
+
+
+
+
+    </script>
+    <!--전체를 감싸는 태그-->
+    <div  id="page-wrapper">
+
+        <!-- header -->
+        <header id="main-header">
+            <table  width="180px" height="0px" text-align="center" align="right"> <!--멤버로그인 박스 설정 align="right"로 오른쪽으로 배치 border속성 사용 x ->선안보임-->
+                <tr>
+                   <td height="150px" text-align="center">
+                     <b>O O O 님 환영합니다😊</b> <br>
+                   <a href="http://localhost:3000/login">Login</a> <br><a href="http://localhost:3000/join">Join</a>
+                   </td> 
+                  </tr>
+              </table>
+              <!--LOGO를 위한 div태그 가운데 위치조정 이미지 소스링크 네이버에서 받아옴-->
+            <div style="text-align: center;">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150403_74%2Flsheng_1428069808248vgMYy_PNG%2F%25B7%25CE%25B0%25ED.png&type=sc960_832" alt="logo" width="150px">
+                
+            </div>
+       
+           
+        </header>
+
+        <!-- navigation  -->
+
+         <nav id="main-nav"> 
+            <div class="pull-left"> 
+                <ul class="outer-menu">
+                    <li class="outer-menu-item">
+                        <span class="menu-title"><a href="">조원소개</a></span>
+                    </li>
+                    <li class="outer-menu-item">
+                         <span class="menu-title"><a href="">전공소개</a></span>
+                    </li>
+                    <li class="outer-menu-item">
+                      <span class="menu-title"><a href="">QnA</a></span>
+                    </li>
+                </ul>
+            </div>
+ 
+          </div>
+
+
+            
+         </nav>   
+         <!-- index -->
+         <section id="main-section">
+            <article>
+                <div class="article-header" id ="page" name="page">
+                    
+                    <!-- 비디오 음소거 자동재생 무한반복-->
+
+        
+                </div>
+            </article>
+         </section>
+         <hr>
+
+
+         <!-- footer -->
+         <footer id="main-footer">
+            <button type="button" onclick="location.href='https://github.com/nodepractice2' ">깃허브</button>
+            <button type="button" onclick="location.href='https://www.yjp.ac.kr/portal/main/index_noie.jsp' ">영진전문대</button>
+            <button type="button" onclick="location.href='https://www.facebook.com/yjcomp' ">컴정페이스북</button>
+            <button type="button" onclick="location.href='https://www.instagram.com/with_yju/' ">인스타그램</button>
+            
+         </footer>
+    </div>
+</body>
+</html>
