@@ -1,319 +1,133 @@
-﻿<!DOCTYPE html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>조원소개</title>
-    <link rel="stylesheet" href="./style.css">
-    <!-- 1. 초기화 -->
-    <script type="text/javascript"
-        src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=V5Tr4uocew6dtmI29ICW7EpfN04oRWg1cCxm0ue5OP7YjTVCngQ2b-5hYOexWI9NsjNPzLHSlxdIyveCNnGlGR8WX4BYAsGOGX8rkvvJr-jtl9QZommZZnpJdLNvDrYqOg260gTDeuw1MEPwtU_shsEU-3JbLN9s_4GjrDf3RRNxHg_BzXHlS5Mp_5FG6M8hQoAFL7-skcaKV9TY_DDdDTicGdBxwOfEGN_6A6_DNfQVk42euGiSlCWcPcevrCsfrW-m4XNCc66bntlG3OAfQJ8QrbhOibGqfCFgv0gFqzyU2pD-MbGxU0mHYg3Ky1RvHldIaOFSi0PlA-ZM62FiE34RunUgDVZ30v00eQ9htByIaWyHYt_1IV2rNIaoD_BzQxw_xR_lStwcLanuAuJyKjRZPu3cyvyQopk2ONBVaRCC4y-flbB2IThl2mEYAtqIQk2wWZ9hOxbf8YXKv6WrzYZ8jS-NRC8eobxjh_kp9_aYcyYekKbp9G2KdQPEiOCMzOMj4EY1w2FleEo7723JXiReUxZQblbPYCxvJEO5NdTnOs7C0CIhLgKofjQn3jcS5bLLU0fwQ6QctfbzRHoKBSK6Ck7itsoFCAhaPBr6BFpEcEgbFmT4PDJEw3MqMoZ8gY4p_gepw89BLou02ZXaqRN82aXTyDkWZnwRfFOcFnTfAnFsqjIrbmmg9mnkjI7ytH7MR_f72izdgRLOdgGnhLXiGHw06uqCoLqtocIQLu6Wq5UzXxwizYDQ2QpfeeehbXpkscFuCdAbFguImG460dqESfIExO91zicvHzkEx1G-EBWbmm1VstMhFA1fCb6HpTmLuCQ8IZ8D9vWPBQknoasVYxOl--boRXU_oo24o-5XR2o-PJ9cNsFMPbkg9tIQ19inbZW5d51MKRbAJfoYAH0RqVceMZ1YPugJJT_wX4N8rWQodg-mRlBZzCZIRpZfGErYjYCC_RGUgn-5cXeUbZPo-H8cKqv3YrmPQCJ-yxX4R85GguSErjxCR3TtCKveC8FLv3lZLwgJR0DT7Jv_OvFuVd2Nd-LnZfS8wP9FMZF__kEmfb3ZI2LZCBbGEIPsCOgRym6UywELk0aRFoadr_ciJt--opwl1ZRwSMI2dMuUde-__y8QHjqh-jDGZZcA1OQwhOFt4o0DPlPU6Xi1z6E_ZHEIHO478hj1tTtfRwKfYO-MdqJw9bGJH64c8G8F4QhAuEb4Ds99Gw9LzfE2dQ"
-        nonce="220493adef5b8d4d1c4fa9a0ea998fe9" charset="UTF-8"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: '맑은 고딕', 'Malgun Gothic', Gothic, sans-serif;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        li {
-            list-style: none;
-        }
-    </style>
-    <!-- 기본 클래스 -->
-    <style>
-        .pull-left {
-            float: left;
-        }
-
-        .pull-right {
-            float: right;
-        }
-    </style>
-    <!-- 2. 페이지 구성하기 -->
-    <style>
-        body {
-            width: 960px;
-            margin: 0 auto;
-            background: linear-gradient(to bottom, rgb(255, 77, 46), rgb(255, 155, 47));
-            ;
-        }
-
-        #page-wrapper {
-            background: white;
-            margin: 40px 0;
-            padding: 10px 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
-        }
-    </style>
-    <!-- 3. 헤더 구성하기 -->
-    <style>
-        .master-title {
-            font-size: 30px;
-            color: #181818;
-        }
-
-        .master-description {
-            font-size: 15px;
-            font-weight: 500;
-            color: #383838;
-        }
-    </style>
-    <!-- 4. 내비게이션 및 풀다운 메뉴 구성하기 -->
-    <style>
-        #quest {
-            padding: 5px 90px;
-        }
-
-        #web {}
-
-        #team {
-            padding: 5px 90px;
-        }
-
-        #main-navigation {
-            border-top: 1px solid #C8C8C8;
-            border-bottom: 1px solid #C8C8C8;
-            margin-bottom: 20px;
-            height: 40px;
-        }
-
-        .outer-menu-item {
-            float: left;
-            position: relative;
-        }
-
-        .outer-menu-item:hover {
-            background: orange;
-            color: white
-        }
-
-        .menu-title {
-            display: block;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            padding: 5px 20px;
-        }
-
-        .inner-menu {
-            display: none;
-            position: absolute;
-            top: 40px;
-            left: 0;
-            width: 100%;
-
-            background: white;
-            box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
-            z-index: 1000;
-
-            text-align: center
-        }
-
-        .inner-menu-item>a {
-            display: block;
-            padding: 5px 10px;
-            color: black
-        }
-
-        .inner-menu-item>a:hover {
-            background: black;
-            color: white;
-        }
-    </style>
-
-    <!-- 6. 본문 추가하기(중앙 내용) -->
-    <style>
-        #content {
-            overflow: hidden;
-        }
-
-        #main-section {
-            float: left;
-            width: 900px;
-        }
-    </style>
-    <!-- 6. 본문 추가하기(본문 포스트 상단) -->
-    <style>
-        article {
-            padding: 0 10px 20px 10px;
-            border-bottom: 1px solid #C8C8C8;
-
-        }
-
-        .article-header {
-            padding: 20px 0;
-        }
-
-        .article-title {
-            font-size: 25px;
-            font-weight: 500;
-            padding-bottom: 10px;
-        }
-
-        .article-date {
-            font-size: 13px;
-        }
-
-        .article-body {
-            font-size: 14px;
-        }
-    </style>
-     <style>
-        .button {
-            float: right;
-        }
-    </style>
-    <script></script>
-    <script></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet"><!-- 폰트 링크-->
+    <link rel="stylesheet" href="./QnA.css"> 
 </head>
 
+
+
 <body>
-    <div id="page-wrapper">
+    <!--전체를 감싸는 태그-->
+    <div  id="page-wrapper">
+
+        <!-- header -->
         <header id="main-header">
-            <hgroup>
-                <h1 class="master-title"><img src="" /></h1>
-            </hgroup>
+            <table  width="180px" height="0px" text-align="center" align="right"> <!--멤버로그인 박스 설정 align="right"로 오른쪽으로 배치 border속성 사용 x ->선안보임-->
+                <tr>
+                   <td height="150px" text-align="center">
+                     <b>MEMBER LOGIN</b> <br>
+                   </td> 
+                  </tr>
+              </table>
+              <!--LOGO를 위한 div태그 가운데 위치조정 이미지 소스링크 네이버에서 받아옴-->
+            <div style="text-align: center;">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150403_74%2Flsheng_1428069808248vgMYy_PNG%2F%25B7%25CE%25B0%25ED.png&type=sc960_832" alt="logo" width="150px">
+                
+            </div>
+       
+           
         </header>
-        <nav id="main-navigation">
-            <div class="pull-left">
+
+        <!-- navigation  -->
+
+         <nav id="main-nav"> 
+            <div class="pull-left"> 
                 <ul class="outer-menu">
-                    <li class="outer-menu-item">
-                        <a href="../WebDB/Introduction.html" class="menu-title" id="web">웹데이터베이스 전공소개</a>
-
-                    </li>
-                    <li class="outer-menu-item">
-                        <a href="../TeamIntro/Teammates.html" span class="menu-title" id="team">조원소개</a>
-
-                    </li>
-                    <li class="outer-menu-item">
-                        <a href="../QnA/QnA.html" class="menu-title" id="quest">Q&A</a>
-
-                    </li>
+                  <li class="outer-menu-item">
+                     <span class="menu-title"><a href="../Teammates/Teammates.html">조원소개</a></span>
+                 </li>
+                 <li class="outer-menu-item">
+                      <span class="menu-title"><a href="../Introduction/Introduction.html">전공소개</a></span>
+                 </li>
+                 <li class="outer-menu-item">
+                   <span class="menu-title"><a href="../QnA/QnA.html">QnA</a></span>
+                 </li>
                 </ul>
             </div>
-
-        </nav>
-        <div id="content">
-            <section id="main-section">
-                <article>
-                    <div>
-                        <h1>
-                            <font color="orange">질의응답</font>
-                        </h1>
-                    </div>
+ 
+          </div>
 
 
-
-                    <div class="board_list_wrap">
-                        <div class="board_list">
-                            <div class="board_list_head">
-                                <div class="num">번호</div>
-                                <div class="tit">제목</div>
-                                <div class="writer">글쓴이</div>
-                                <div class="date">작성일</div>
-                                <div class="view">조회</div>
-                            </div>
-                            <div class="board_list_body">
-                                <div class="item">
-                                    <div class="num">5</div>
-                                    <div class="tit"><a href="#">게시글</a></div>
-                                    <div class="writer">관리자</div>
-                                    <div class="date">2020-05-20</div>
-                                    <div class="view">111</div>
-                                </div>
-                                <div class="item">
-                                    <div class="num">4</div>
-                                    <div class="tit"><a href="#">게시글</a></div>
-                                    <div class="writer">관리자</div>
-                                    <div class="date">2020-05-20</div>
-                                    <div class="view">222</div>
-                                </div>
-                                <div class="item">
-                                    <div class="num">3</div>
-                                    <div class="tit"><a href="#">게시글</a></div>
-                                    <div class="writer">관리자</div>
-                                    <div class="date">2020-05-20</div>
-                                    <div class="view">333</div>
-                                </div>
-                                <div class="item">
-                                    <div class="num">2</div>
-                                    <div class="tit"><a href="#">게시글</a></div>
-                                    <div class="writer">관리자</div>
-                                    <div class="date">2020-05-20</div>
-                                    <div class="view">222</div>
-                                </div>
-                                <div class="item">
-                                    <div class="num">1</div>
-                                    <div class="tit"><a href="#">게시글</a></div>
-                                    <div class="writer">관리자</div>
-                                    <div class="date">2020-05-20</div>
-                                    <div class="view">111</div>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <button onclick="location.href='../write'" class="button">글쓰기</button>
-                        <div class="paging">
-                            <a href="#" class="bt first">처음 페이지</a>
-                            <a href="#" class="bt prev">이전 페이지</a>
-                            <a href="#" class="num on">1</a>
-                            <a href="#" class="num">2</a>
-                            <a href="#" class="num">3</a>
-                            <a href="#" class="bt next">다음 페이지</a>
-                            <a href="#" class="bt last">마지막 페이지</a>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+            
+         </nav>   
+         <!-- index -->
+         <section id="main-section">
+            <article>
+            <div class="board_list_wrap">
+               <div class="board_list">
+                   <div class="board_list_head">
+                       <div class="num">번호</div>
+                       <div class="tit">제목</div>
+                       <div class="writer">글쓴이</div>
+                       <div class="date">작성일</div>
+                       <div class="view">조회</div>
+                   </div>
+                   <div class="board_list_body">
+                       <div class="item">
+                           <div class="num">5</div>
+                           <div class="tit"><a href="#">게시글</a></div>
+                           <div class="writer">관리자</div>
+                           <div class="date">2020-05-20</div>
+                           <div class="view">111</div>
+                       </div>
+                       <div class="item">
+                           <div class="num">4</div>
+                           <div class="tit"><a href="#">게시글</a></div>
+                           <div class="writer">관리자</div>
+                           <div class="date">2020-05-20</div>
+                           <div class="view">222</div>
+                       </div>
+                       <div class="item">
+                           <div class="num">3</div>
+                           <div class="tit"><a href="#">게시글</a></div>
+                           <div class="writer">관리자</div>
+                           <div class="date">2020-05-20</div>
+                           <div class="view">333</div>
+                       </div>
+                       <div class="item">
+                           <div class="num">2</div>
+                           <div class="tit"><a href="#">게시글</a></div>
+                           <div class="writer">관리자</div>
+                           <div class="date">2020-05-20</div>
+                           <div class="view">222</div>
+                       </div>
+                       <div class="item">
+                           <div class="num">1</div>
+                           <div class="tit"><a href="#">게시글</a></div>
+                           <div class="writer">관리자</div>
+                           <div class="date">2020-05-20</div>
+                           <div class="view">111</div>
+                       </div>
+                   </div>
+               </div>
+               <br>
+               <button onclick="location.href='../write'" class="button">글쓰기</button>
+               <div class="paging">
+                   <a href="#" class="bt first">처음 페이지</a>
+                   <a href="#" class="bt prev">이전 페이지</a>
+                   <a href="#" class="num on">1</a>
+                   <a href="#" class="num">2</a>
+                   <a href="#" class="num">3</a>
+                   <a href="#" class="bt next">다음 페이지</a>
+                   <a href="#" class="bt last">마지막 페이지</a>
+               </div>
+           </div>
+           </article>
+         </section>
+         <hr>
 
 
-                    <div class="article-body">
-
-                        <img src="" />
-
-                    </div>
-                </article>
-
-
-
-            </section>
-
-        </div>
-        <footer id="main-footer">
-            <a href="#">
-                <font color="orange"></font>
-            </a>
-        </footer>
+         <!-- footer -->
+         <footer id="main-footer">
+            <a href="https://github.com/nodepractice2" class="git">깃허브</a>
+            <a href="http://www.yjp.ac.kr/portal/main/index_main.jsp" class="yjp">영진전문대학</a>
+            <a href="https://www.facebook.com/yjcomp" class="fbcom">컴정페이스북</a>
+            <a href="https://www.instagram.com/with_yju/" class="instacom">영진공식인스타그램</a>
+         </footer>
     </div>
 </body>
-
 </html>
